@@ -23,6 +23,20 @@ header {
     color: white;
 }
 
+.form {
+    margin-top: 30px;
+}
+
+.form > a {
+    color: rgb(2, 49, 87);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form > a:hover {
+    text-decoration: underline;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -55,12 +69,22 @@ header {
     padding-bottom: 5px;
 }
 
-.container > div > p:focus {
-    border-bottom: solid 1px rgb(255, 255, 255);
+.table-container {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all .5s ease-in-out;
 }
 
-.table-container {
+.container > div:focus > .table-container,
+.container > div > p:focus + .table-container {
+    max-height: 500px;
+    opacity: 1;
     overflow: auto;
+}
+
+.container > div:focus > p ,.container > div > p:focus{
+    border-bottom: solid 1px rgb(255, 255, 255);
 }
 
 .table-container table{
