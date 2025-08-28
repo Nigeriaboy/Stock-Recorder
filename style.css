@@ -70,18 +70,10 @@ header {
     padding-bottom: 5px;
 }
 
-.table-container {
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: all .5s ease-in-out;
-}
-
-.container > div:focus > .table-container,
-.container > div > p:focus + .table-container {
+.container > div .table-container{
     max-height: 500px;
-    opacity: 1;
     overflow: auto;
+    transition: all ease-in-out 0.5s;
 }
 
 .container > div:focus > p ,.container > div > p:focus{
@@ -91,6 +83,12 @@ header {
 .table-container table{
     border-collapse: collapse;
     overflow: auto;
+}
+
+body:focus .table-container{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
 }
 
 table * {

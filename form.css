@@ -89,6 +89,7 @@ form label {
     cursor: pointer;
 }
 
+/**
 .button-container > p:first-child:focus {
     background-color: green;
     color: white;
@@ -99,7 +100,7 @@ form label {
     background-color: red;
     color: white;
     border: solid 2px  rgb(43, 235, 209);
-}
+}**/
 
 input[type='submit'] {
     width: 40%;
