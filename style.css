@@ -12,6 +12,16 @@ body {
     background-color: rgb(209, 209, 209);
 }
 
+.message-box {
+    display: none;
+    position: fixed;
+    top: 10px;
+    background-color: rgb(124, 238, 124);
+    color: black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+
 header {
     width: 100%;
     text-align: center;
@@ -100,4 +110,9 @@ table * {
 table  th {
     border: solid 2px white;
     color: rgb(43, 235, 209);
+}
+
+.reset-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
